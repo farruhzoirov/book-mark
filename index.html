@@ -15,6 +15,9 @@
 </head>
 <body>
 <!--Site header starts-->
+<div class="intro-container">
+
+</div>
 <header class="site-header">
     <div class="container">
         <div class="site-header__inner">
@@ -70,51 +73,136 @@
         </div>
     </section>
 
-<!--Features-->
-<div class="container">
-          <section class="site-main-titles">
-                 <div class="site-main-titles__inner">
+    <!--Features-->
+    <div class="container">
+        <section class="site-main-titles">
+            <div class="site-main-titles__inner">
                 <h2 class="site-main-titles__heading">Features</h2>
                 <p class="site-main-titles__info">Our aim is to make it quick and easy for you to access your favourite
                     websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-               </div>
-         </section>
-</div>
+            </div>
+        </section>
+    </div>
 
     <section class="site-main-tabs">
         <div class="container">
             <ul class="site-main-tabs__list">
-                <li class="site-main-tabs__item">Simple Bookmarking</li>
-                <li class="site-main-tabs__item">Speedy Searching</li>
-                <li class="site-main-tabs__item">Easy Sharing</li>
+                <li class="site-main-tabs__item site-main-tabs__item--active ">
+                    <a class="site-main-tabs__link js-site-main-tabs__link" href="#simple-book-marking" id="simple-book-marking">
+                        Simple Bookmarking
+                    </a>
+                </li>
+                <li class="site-main-tabs__item">
+                    <a class="site-main-tabs__link js-site-main-tabs__link" href="#speedy-searching" id="speedy-searching">
+                        Speedy Searching
+                    </a>
+                </li>
+                <li class="site-main-tabs__item">
+                    <a class="site-main-tabs__link js-site-main-tabs__link" href="#easy-sharing" id="easy-sharing">
+                        Easy Sharing
+                    </a>
+                </li>
             </ul>
-        </div>
+            <section class="site-main-tabs__cards">
+                <div class="site-main-tabs__card site-main-tabs__card--active">
+                    <div class="site-main-tabs__inner">
+                        <img class="site-main-tabs-illustration--bookmark" src="img/simple-bookmarking-illustration.svg" width="536" height="346"
+                             alt="Bookmarking image">
+                        <div class="site-main-tabs__content">
+                            <h2 class="site-main-tabs__title">Bookmark in one click</h2>
+                            <p class="site-main-tabs__text">Organize your bookmarks however you like. Our simple
+                                drag-and-drop interface gives you complete control over how you manage your favourite
+                                sites.</p>
+                            <a class=" site-main-tabs__button site-main-tabs--tstyles button--blue" href="#">More
+                                info</a>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="site-main-tabs__card">
+                    <div class="site-main-tabs__inner">
+                        <img class="site-main-tabs-illustration--search" src="img/intelligent-search-illustration.svg" width="478" height="408" alt="Search image">
+                        <div class="site-main-tabs__content">
+                            <h2 class="site-main-tabs__title">Intelligent search</h2>
+                            <p class="site-main-tabs__text">Our powerful search feature will help you find saved sites
+                                in no time at all. No need to trawl through all of your bookmarks.</p>
+                            <a class=" site-main-tabs__button site-main-tabs--tstyles    button--blue" href="#">More
+                                info</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="site-main-tabs__card">
+                    <div class="site-main-tabs__inner">
+                        <img class="site-main-tabs-illustration--share"   src="img/easy-share-illustration.svg" width="440" height="380" alt="Easy share image">
+                        <div class="site-main-tabs__content">
+                            <h2 class="site-main-tabs__title">Share your bookmarks</h2>
+                            <p class="site-main-tabs__text">Easily share your bookmarks and collections with others.
+                                Create a shareable link that you can send at the click of a button.</p>
+                            <a class=" site-main-tabs__button site-main-tabs--tstyles    button--blue" href="#">More
+                                info</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </section>
-<!--Downloading extention-->
- <div class="container">
-       <section class="site-main-titles">
-              <div class="site-main-titles__inner">
-                  <h2 class="site-main-titles__heading">Download the extension</h2>
-                   <p class="site-main-titles__info">We’ve got more browsers in the pipeline. Please do let us know if you’ve
+    <!--Downloading extention-->
+    <div class="container">
+        <section class="site-main-titles">
+            <div class="site-main-titles__inner">
+                <h2 class="site-main-titles__heading">Download the extension</h2>
+                <p class="site-main-titles__info">We’ve got more browsers in the pipeline. Please do let us know if
+                    you’ve
                     got a favourite you’d like us to prioritize.</p>
             </div>
-      </section>
-  </div>
-<!--FAQ-->
-  <div class="container">
-    <section class="site-main-titles">
+        </section>
+
+        <section class="site-main-extention-cards">
+            <ul class="site-main-extention__list">
+                <li class="site-main-extention__item">
+                    <img src="img/chrome-logo.svg" width="102" height="100" alt="Chrome logo">
+                    <div class="site-main-extention__content">
+                        <h3 >Add to Chrome</h3>
+                        <p>Minimum version 62</p>
+                    </div>
+                    <a class="site-main-extention__link button--blue" href="#" >Add & Install Extens</a>
+                </li>
+                <li class="site-main-extention__item">
+                    <img src="img/firefox-logo.svg" width="102" height="100" alt="Chrome logo">
+                    <div class="site-main-extention__content">
+                        <h3 >Add to Firefox</h3>
+                        <p>Minimum version 55</p>
+                    </div>
+                    <a class="site-main-extention__link button--blue" href="#" >Add & Install Extens</a>
+                </li>
+                <li class="site-main-extention__item">
+                    <img src="img/opera-logo.svg" width="102" height="100" alt="Chrome logo">
+                    <div class="site-main-extention__content">
+                        <h3 >Add to Opera</h3>
+                        <p>Minimum version 46</p>
+                    </div>
+                    <a class="site-main-extention__link button--blue" href="#" >Add & Install Extens</a>
+                </li>
+            </ul>
+        </section>
+
+
+
+    </div>
+    <!--FAQ-->
+    <div class="container">
+        <section class="site-main-titles">
             <div class="site-main-titles__inner">
                 <h2 class="site-main-titles__heading">Frequently Asked Questions</h2>
                 <p class="site-main-titles__info">Here are some of our FAQs. If you have any other questions you’d like
                     answered please feel free to email us.</p>
             </div>
-    </section>
- </div>
+        </section>
+    </div>
 
 
 </main>
-
 <!--Site main ends-->
 
 <script src="js/main.js"></script>
