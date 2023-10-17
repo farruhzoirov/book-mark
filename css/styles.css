@@ -10,6 +10,7 @@
 
 html {
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 *,*::before,
@@ -188,12 +189,13 @@ img {
 /*Site main styles*/
 .site-main {
     flex-grow: 1;
+    padding-bottom: 300px;
 }
 .site-hero {
     padding-top: 150px;
     background-image: url("../img/whole-bg.png");
     background-repeat: no-repeat;
-    background-position:calc(50% + 500px) 300px;
+    background-position:calc(50% + 500px)  300px;
     background-size: 520px 360px;
     padding-bottom: 125px;
     margin-bottom: 85px;
@@ -488,7 +490,6 @@ img {
 }
 
 
-
 .site-main-extention__item:nth-child(1) {
     align-self: flex-start;
 }
@@ -499,12 +500,6 @@ img {
 .site-main-extention__item:nth-child(3) {
     align-self: flex-end;
 }
-
-
-
-
-
-
 
 
 .site-main-extention__item:not(:last-child) {
@@ -557,8 +552,91 @@ img {
     border-color: var(--more-info-button-color);
     background-color: #ffffff;
     color:var(--more-info-button-color)
+}
+
+/*Accordion styles*/
+.accordion-container {
+    max-width: 540px;
+    max-height: 490px;
+    margin: 0 auto;
+}
+
+.accordion-container__faq {
+    border-bottom: 1px solid rgba(36, 42, 69, 0.15);
+    padding-bottom: 13px;
+}
+
+
+.accordion-container__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid rgba(36, 42, 69, 0.15);
 
 }
+
+.accordion-container__heading h3 {
+    color: var(--gray-text-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    transition: color 0.3s ease;
+}
+.accordion-container__heading h3:hover {
+    color: var(--login-button-color);
+}
+
+
+
+
+.accordion-container__heading svg {
+    width: 20px;
+    height: 13px;
+    color:var(--more-info-button-color);
+    transition: transform 0.5s ease-in;
+}
+
+.accordion-container__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease;
+}
+
+
+.accordion-container__content p {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: rgba(36, 42, 69, 0.75);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+}
+
+.accordion-container__faq.active .accordion-container__content {
+    max-height: 400px;
+    animation: action 0.8s ease-in-out;
+}
+
+.accordion-container__faq.active svg {
+    transform: rotate(180deg);
+    color: var(--login-button-color);
+}
+
+
+@keyframes action {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 
 
 
