@@ -82,6 +82,11 @@ img {
 }
 
 
+*:focus {
+    outline: 1px dashed var(--more-info-button-color);
+    offset: 4px;
+}
+
 
 
 
